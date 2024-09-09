@@ -1,0 +1,54 @@
+<form [formGroup]="myForm">
+  <label for="name">Name:</label>
+  <input id="name" formControlName="name" />
+
+  <!-- Display form control states -->
+  <table>
+    <thead>
+      <tr>
+        <th>Form State</th>
+        <th>Value</th>
+        <th>Default</th>
+        <th>Changed?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dirty</td>
+        <td>{{ myForm.dirty }}</td>
+        <td>false</td>
+        <td>{{ myForm.dirty !== false ? 'changed': '' }}</td>
+      </tr>
+      <tr>
+        <td>Pristine</td>
+        <td>{{ myForm.pristine }}</td>
+        <td>true</td>
+        <td>{{ myForm.pristine !== true ? 'changed': '' }}</td>
+      </tr>
+      <tr>
+        <td>Touched</td>
+        <td>{{ myForm.touched }}</td>
+        <td>false</td>
+        <td>{{ myForm.touched !== false ? 'changed': '' }}</td>
+      </tr>
+      <tr>
+        <td>Untouched</td>
+        <td>{{ myForm.untouched }}</td>
+        <td>true</td>
+        <td>{{ myForm.untouched !== true ? 'changed': '' }}</td>
+      </tr>
+      <tr>
+        <td>Valid</td>
+        <td>{{ myForm.valid }}</td>
+        <td>false</td>
+        <td>{{ myForm.valid !== false ? 'changed': '' }}</td>
+      </tr>
+      <tr>
+        <td>Invalid</td>
+        <td>{{ myForm.invalid }}</td>
+        <td>true</td>
+        <td>{{ myForm.invalid !== true ? 'changed': '' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</form>
