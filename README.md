@@ -1,6 +1,6 @@
 # test-angular-form-states
 
-📒 Test app create to debug Angular Forms States
+📒 Test app for debugging Angular Forms states
 
 ## Preview 🎉
 
