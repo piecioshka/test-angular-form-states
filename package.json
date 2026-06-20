@@ -1,5 +1,6 @@
 {
   "name": "test-angular-form-states",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "ng": "ng",
